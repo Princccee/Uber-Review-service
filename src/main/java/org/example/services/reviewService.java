@@ -20,10 +20,8 @@ public class reviewService implements CommandLineRunner {
         System.out.println("***********************");
 
         Review r = Review.builder()
-                .Content("Amazing Ride")
-                .createdAt(new Date())
-                .updatedAt(new Date())
-                .rating(4.5)
+                .Content("Driver was nice")
+                .rating(4.0)
                 .build();
 
         System.out.println(r.toString());
