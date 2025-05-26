@@ -15,7 +15,7 @@ import java.util.Date;
 @Setter
 public abstract class baseModel {
     @Id  // makes the field as primary key in our DB table
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // DB auto increments the ID
+    @GeneratedValue(strategy = GenerationType.TABLE) // generate unique ID for each table
     protected Long id;
 
     @Column(nullable = false)
