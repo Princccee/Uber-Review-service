@@ -27,4 +27,11 @@ public class Booking extends baseModel{
     private Date endTime;
 
     private long totalDistance;
+
+    @ManyToOne
+    private Driver driver;
+
+    @ManyToOne
+    private Passengers passenger;
+
 }
