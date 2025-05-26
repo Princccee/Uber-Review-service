@@ -10,7 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "bookingReview") //custom name for the table
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Review extends baseModel{
 
     @Column(nullable = false)

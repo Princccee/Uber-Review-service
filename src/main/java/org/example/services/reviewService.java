@@ -24,7 +24,7 @@ public class reviewService implements CommandLineRunner {
                 .rating(4.0)
                 .build();
 
-        System.out.println(r.toString());
+//        System.out.println(r.toString());
         reviewRepo.save(r); //execute the sql to insert an entry in the table
 
     }
