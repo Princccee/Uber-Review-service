@@ -13,7 +13,8 @@ import java.util.Date;
 @AllArgsConstructor
 public class Booking extends baseModel{
 
-    @OneToOne  // one booking will have one review
+    // one booking will have one review
+    @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     private Review review;  // Composition
 
     @Enumerated(value = EnumType.STRING) // tells spring that its an enum

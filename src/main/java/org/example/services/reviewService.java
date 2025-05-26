@@ -34,12 +34,12 @@ public class reviewService implements CommandLineRunner {
         Booking b = Booking.builder()
                 .startTime(new Date())
                 .endTime(new Date())
-                .totalDistance((long) 21.4)
+                .totalDistance((long) 21)
                 .review(r)  // Inject a review object inside booking object that is called class composition
                 .build();
 
-        reviewRepo.save(r); //execute the sql to insert an entry in the table
         bookingRepo.save(b); //save the entry in booking table
 
+        reviewRepo.save(r); //execute the sql to insert an entry in the table
     }
 }
