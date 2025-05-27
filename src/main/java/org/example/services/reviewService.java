@@ -24,22 +24,22 @@ public class reviewService implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("***********************");
-
-        Review r = Review.builder()
-                .Content("Driver was nice")
-                .rating(4.0)
-                .build();
-
-        Booking b = Booking.builder()
-                .startTime(new Date())
-                .endTime(new Date())
-                .totalDistance((long) 21)
-                .review(r)  // Inject a review object inside booking object that is called class composition
-                .build();
-
-        bookingRepo.save(b); //save the entry in booking table
-
-        reviewRepo.save(r); //execute the sql to insert an entry in the table
+//        System.out.println("***********************");
+//
+//        Review r = Review.builder()
+//                .Content("Driver was nice")
+//                .rating(4.0)
+//                .build();
+//
+//        Booking b = Booking.builder()
+//                .startTime(new Date())
+//                .endTime(new Date())
+//                .totalDistance((long) 21)
+//                .review(r)  // Inject a review object inside booking object that is called class composition
+//                .build();
+//
+//        bookingRepo.save(b); //save the entry in booking table
+//
+//        reviewRepo.save(r); //execute the sql to insert an entry in the table
     }
 }
