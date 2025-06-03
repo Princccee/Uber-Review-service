@@ -14,7 +14,6 @@ import java.util.Date;
 public class reviewService implements CommandLineRunner {
 
     private final reviewRepository reviewRepo;   //Dependency Injection
-
     private final bookingRepository bookingRepo;
 
     public reviewService(reviewRepository reviewRepo , bookingRepository bookingRepo) {
